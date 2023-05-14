@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  width: 100vw;
+  height: 80px;
+  margin: 0;
+  background-color: black;
+  
+  img {
+    object-fit: cover;
+    width: 267px;
+    border: 1px solid black;
+  }
+
+  .sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    p {
+      font-size: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      letter-spacing: 6px;
+      color: white;
+      margin-right: 64px;
+    }
+  }
+}
