@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Header } from './components/header'
+import Hero from './components/hero'
+import { SplitScreens } from './components/splitscreens'
+import Tagline from './components/tagline'
+import About from './components/about'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Header />
+      <Hero />
+      <Tagline />
+      <About />
+      <SplitScreens />
     </>
   )
 }

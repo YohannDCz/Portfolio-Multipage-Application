@@ -1,10 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-export function Header(props: any) {
+export function Header() {
   return (
     <div className="header">
-      <img src="logos/logotype.png" alt="The logotype of the page." />
+      <img src="/logos/logotype.png" alt="The logotype of the page." />
       <div className="sections">
         <p>HOME</p>
         <p>PROJECTS</p>

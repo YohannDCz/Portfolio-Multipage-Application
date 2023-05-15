@@ -1,9 +1,11 @@
 .header {
+  position: fixed;
   display: flex;
   width: 100vw;
   height: 80px;
   margin: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
   
   img {
     object-fit: cover;
@@ -18,7 +20,7 @@
     align-items: center;
 
     p {
-      font-size: 24px;
+      font-size: 16px;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
       letter-spacing: 6px;
