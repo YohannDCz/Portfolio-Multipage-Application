@@ -1,6 +1,12 @@
 // import { useState, useEffect } from "react";
+interface SplitScreenProps {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
 
-export function SplitScreen({title, description, image, link}) {
+export function SplitScreen({title, description, image, link}: SplitScreenProps) {
     return (
     <div className="box">
       <div className="wrapper images-box">
@@ -11,6 +17,7 @@ export function SplitScreen({title, description, image, link}) {
         <div className="text">
           <h1>{title}</h1>
           <p>{description}</p>
+          <a href={link}><button className="seemore">SEE MORE</button></a>
         </div>
       </div>
     </div>

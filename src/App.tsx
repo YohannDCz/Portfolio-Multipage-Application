@@ -3,6 +3,8 @@ import Hero from './components/hero'
 import { SplitScreens } from './components/splitscreens-home'
 import Tagline from './components/tagline'
 import About from './components/about'
+import { PanelProjects } from './components/panel-projects'
+import { PanelStack } from './components/panel-stack';
 
 function App() {
 
@@ -13,7 +15,9 @@ function App() {
       <Tagline />
       <About />
       <SplitScreens />
-    </>
+      <PanelProjects />
+      <PanelStack />
+    </> 
   )
 }
 

@@ -4,6 +4,8 @@
 @use "tagline.scss";
 @use "splitscreens.scss";
 @use "about.scss";
+@use "panel-projects";
+@use "panel-stack";
 
 * {
   font-size: 16px;
@@ -17,6 +19,7 @@ body, html {
   height: 100%;
   overflow: auto;
   margin: 0;
+  background-color: #FFFBF5;
 }
 
 #root {

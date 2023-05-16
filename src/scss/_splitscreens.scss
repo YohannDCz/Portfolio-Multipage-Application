@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-color: white;
     .text {
       display: flex;
       flex-direction: column;
@@ -71,6 +71,19 @@
         font-weight: 500;
         line-height: 36px;
         color: black;
+      }
+
+      button {
+        background-color: #5548F6;
+        width: 200px;
+        height: 56px;
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        border: none;
+        border-radius: 999px;
+        margin-top: 40px;
       }
     }
   }
