@@ -1,14 +1,5 @@
-
-function Tech({image, text}) {
-  return <div className="item">
-    <img src={image} alt="" className="image" />
-    <p>{text}</p>
-  </div>;
-}
-
-export function PanelStack() {
-
-  const tech = [
+{
+  "tech" : [
     {
       "image": "/logos/logo_web.png",
       "text": "HTML5, CSS3, ES6",
@@ -74,23 +65,6 @@ export function PanelStack() {
       "image": "/logos/logo_php.png",
       "text": "PHP",
       "description": "PHP est un langage de programmation open-source, principalement utilisé pour le développement web côté serveur, qui peut être intégré directement dans le HTML. J’en aie fait énormément dans mon école."
-    },
+    }
   ]
-  return (
-    <div className="panel-stack">
-      <div className="titleseemore">
-        <div className="title">STACK TECHNOLOGIQUE</div>
-        <div className="seemore">Voir plus...</div>
-      </div>
-      <div className="stackarrow">
-        <img className="arrow leftarrow" src="/icons/arrow.png" alt="The left arrow."  style={{transform: "rotate(180deg"}}/>
-        <div className="stack">
-          {tech.map(({image, text}) =>
-            <Tech image={image} text={text} />
-          )}
-        </div>
-        <img className="arrow rightarrow" src="/icons/arrow.png" alt="The right arrow."/>
-      </div>
-    </div>
-  )
 }

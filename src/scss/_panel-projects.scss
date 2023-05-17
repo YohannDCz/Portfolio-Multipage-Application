@@ -1,6 +1,5 @@
 .other-project {
   width: 100%;
-  height: 714px;
 
   .titleseemore {
     display: flex;
@@ -47,7 +46,7 @@
         align-items: center;
         width: 100%;
         min-width: 371px;
-        height: 464px;
+        min-height: 464px;
         background-color: black;
         border-radius: 10px;
         margin-right: 40px;
@@ -68,6 +67,7 @@
             font-size: 20px;
             font-family: "Poppins", sans-serif;
             font-weight: bold;
+            color: white;
           }
 
           .description {
@@ -75,7 +75,37 @@
             font-family: "Poppins", sans-serif;
             font-weight: normal;
             line-height: 1.45;
+            color: white;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .other-project {
+    .titleseemore {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cardsarrow {
+      flex-direction: column;
+
+      .arrow {
+        display: none;
+      }
+
+      .cards {
+        min-width: 372px;
+        max-height: 1472px;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+          margin: 0;
+          margin-bottom: 40px;
         }
       }
     }
