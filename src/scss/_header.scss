@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,14 +25,22 @@
       justify-content: start;
       align-items: center;
 
-      p {
-        font-size: 16px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-        letter-spacing: 6px;
-        color: white;
-        margin-right: 64px;
+      a {
+        text-decoration: none;
+        p {
+          font-size: 16px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          letter-spacing: 6px;
+          color: white;
+          margin-right: 64px;
+
+           &.purple {
+          color: #5548F6;
+        }
+        }
       }
+      
     }
   }
 
@@ -75,13 +83,21 @@
     flex-direction: column;
     justify-content: start;
 
-    p {
-      font-size: 24px;
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      letter-spacing: 6px;
-      color: white;
-      margin: 16px 40px;
+    a {
+      text-decoration: none;
+      
+      p {
+        font-size: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        letter-spacing: 6px;
+        color: white;
+        margin: 16px 40px;
+
+        &.purple {
+          color: #5548F6;
+        }
+      }
     }
   }
 }

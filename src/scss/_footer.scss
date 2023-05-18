@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: end;
   width: 100%;
+  margin-top: -100px;
 
   .contact {
     transform: translateY(210px);
@@ -137,7 +138,6 @@
   .footer {
 
     .contact {
-      height: 1000px;
       .container {
         flex-direction: column;
         align-items: center;

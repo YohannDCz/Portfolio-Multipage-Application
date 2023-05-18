@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 
 interface TechProps {
   image: string;
-  text: string;
+  title: string;
 }
 
-function Tech({image, text}: TechProps) {
+function Tech({image, title}: TechProps) {
   return <div className="item">
     <img src={image} alt="" className="image" />
-    <p>{text}</p>
+    <p>{title}</p>
   </div>;
 }
 
@@ -39,9 +39,9 @@ export function PanelStack() {
       </div>
       <div className="stackarrow">
         <img className="arrow leftarrow" src="/icons/arrow.png" alt="The left arrow."  style={{transform: "rotate(180deg"}}/>
-        <div className="stack">
-          {data?.tech?.map(({image, text}: TechProps) =>
-            <Tech image={image} text={text} />
+        <div className="stack items">
+          {data?.tech?.map(({image, title}: TechProps) =>
+            <Tech image={image} title={title} />
           )}
         </div>
         <img className="arrow rightarrow" src="/icons/arrow.png" alt="The right arrow."/>
