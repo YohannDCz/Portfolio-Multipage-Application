@@ -1,20 +1,20 @@
 import { Header } from '../shared/header'
 import { PanelStack } from '../shared/panel-stack';
+import { PanelProjects } from '../shared/panel-projects';
 import { Footer } from '../shared/footer'
-import Insight from './insight';
-import { SplitScreens } from './splitscreen_project';
+import { Form } from '../contact/form';
 
-function Projects() {
+function Contact() {
 
   return (
     <>
       <Header />
-      <Insight />
-      <SplitScreens />
+      <Form />
+      <PanelProjects />
       <PanelStack />
       <Footer />
     </> 
   )
 }
 
-export default Projects
+export default Contact
