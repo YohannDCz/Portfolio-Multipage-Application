@@ -14,8 +14,6 @@ export function Header() {
     drawer.style.transform = "translateX(350px)";
   }
 
-  console.log(location.pathname);
-
   return (
     <>
       <div className="header">

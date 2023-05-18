@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { carousel } from "./carousel-panel-project";
+import { carouselProjects } from "./carousel-panel-project";
 interface CardProps {
   title: string;
   description: string;
@@ -39,18 +39,17 @@ export function PanelProjects () {
   useEffect(() => {
     getData();
   })
-
-  carousel();
-
+  
+  carouselProjects();
   return (
     <div className="other-project">
       <div className="titleseemore">
         <div className="title">AUTRES PROJETS</div>
         <div className="seemore">Voir plus...</div>
       </div>
-      <div className="cardsarrow">
+      <div className="cardsarrow carousel">
         <img className="arrow leftarrow" src="/icons/arrow.png" alt="The left arrow."  style={{transform: "rotate(180deg"}}/>
-        <div className="cards carousel">
+        <div className="cards">
           <div className="items">
             {data?.description?.slice(4, 10).map(({title, description, image, link}: CardProps) => (
               <Card key={title} title={title} description={description} image={image} link={link} />
