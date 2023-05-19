@@ -14,10 +14,10 @@ function App() {
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="https://projet-entreprise.vercel.app/" element={<Home />} />
-          <Route path="https://projet-entreprise.vercel.app/projects" element={<Projects />} />
-          <Route path="https://projet-entreprise.vercel.app/stack" element={<Stack />} />
-          <Route path="https://projet-entreprise.vercel.app/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/stack" element={<Stack />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </Provider>
