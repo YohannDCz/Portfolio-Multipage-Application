@@ -14,7 +14,6 @@ export function SplitScreen({title, description, image, link}: SplitScreenProps)
     <div className="box">
       <div className="wrapper images-box">
         <img src={image} className="screenshots" />
-        <img className="qrcode" src="/icons/QRcodes/qrcode1.png" alt="" />
       </div>
       <div className="wrapper text-box">
         <div className="text">
