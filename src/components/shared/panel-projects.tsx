@@ -35,6 +35,7 @@ export function PanelProjects () {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    // @ts-ignore
     dispatch(fetchDataShort());
   }, [dispatch]);
   carouselProjects();

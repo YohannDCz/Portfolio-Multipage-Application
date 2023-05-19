@@ -19,6 +19,7 @@ export function Tech() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    // @ts-ignore
     dispatch(fetchDataStack());
   }, [dispatch]);
   

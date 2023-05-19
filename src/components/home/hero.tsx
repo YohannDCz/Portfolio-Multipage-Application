@@ -6,6 +6,7 @@ export default function Hero() {
   const scene = useRef(null);
 
   useEffect(()=> {
+    // @ts-ignore
     const parallax = new Parallax(scene.current);
   }, [])
 

@@ -42,6 +42,7 @@ export function PanelStack() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    // @ts-ignore
     dispatch(fetchDataStack());
   }, [dispatch]);
   return (
