@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchDataStack } from '../../redux/actions';
+import { carouselStack } from "./carousel";
 interface TechProps {
   image: string;
   title: string;
@@ -45,6 +46,9 @@ export function PanelStack() {
     // @ts-ignore
     dispatch(fetchDataStack());
   }, [dispatch]);
+
+  carouselStack();
+
   return (
     <div className="panel-stack">
       <div className="titleseemore">
