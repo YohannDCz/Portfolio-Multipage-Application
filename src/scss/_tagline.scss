@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'Ananda';
-  src: url('font/anandablackpersonaluseregular-rg9rx-webfont.woff') format('woff');
-  /* Add additional font formats if available */
-  /* You can also specify font-weight and font-style properties if needed */
+  src: url('../public/font/anandablackpersonaluseregular-rg9rx-webfont.woff') format('woff');
 }
 .tagline {
   display: flex;
