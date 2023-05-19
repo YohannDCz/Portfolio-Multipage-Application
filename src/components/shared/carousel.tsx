@@ -24,7 +24,7 @@ export function carouselProjects() {
     if (currentPosition > maxPosition) {
       currentPosition = maxPosition;
     }
-
+    // @ts-ignore
     itemsContainer.style.transform = `translateX(${currentPosition}px)`;
   }
 }
@@ -56,7 +56,7 @@ export function carouselStack() {
     if (currentPosition < maxPosition) {
       currentPosition = maxPosition;
     }
-
+    // @ts-ignore
     itemsContainer.style.transform = `translateX(${currentPosition}px)`;
   }
 }

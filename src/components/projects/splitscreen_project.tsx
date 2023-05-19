@@ -22,6 +22,7 @@ export function SplitScreens() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    // @ts-ignore
     dispatch(fetchData());
   }, [dispatch]);
 
