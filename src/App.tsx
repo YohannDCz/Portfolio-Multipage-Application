@@ -6,17 +6,22 @@ import Projects from "./components/projects/projects";
 import Stack from "./components/stack.tsx/stack";
 import Contact from "./components/contact/contact";
 
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 function App() {
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/stack" element={<Stack />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/stack" element={<Stack />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+    </Provider>
   );
 }
 

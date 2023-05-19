@@ -14,7 +14,11 @@
     .seemore {
       font-size: 20px;
       text-decoration: underline;
+      color: black;
 
+      &:hover {
+        color: blue;
+      }
     }
   }
 
@@ -95,6 +99,12 @@
     .titleseemore {
       flex-direction: column;
       align-items: center;
+
+      .title {
+        text-align: center;
+        margin-bottom: 16px;
+      }
+
     }
 
     .cardsarrow {
@@ -110,6 +120,10 @@
         flex-direction: column;
         align-items: center;
 
+        .items {
+          flex-direction: column;
+          overflow: hidden;
+        }
         .card {
           margin: 0;
           margin-bottom: 40px;

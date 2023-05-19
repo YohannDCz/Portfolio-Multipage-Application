@@ -88,6 +88,14 @@
         border: none;
         border-radius: 999px;
         margin-top: 40px;
+
+        &:hover {
+          background-color: #312a94;
+        }
+
+        &:active {
+          background-color: #8179f5;
+        }
       }
     }
   }

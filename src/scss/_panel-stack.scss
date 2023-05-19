@@ -14,6 +14,11 @@
     .seemore {
       font-size: 20px;
       text-decoration: underline;
+      color: black;
+
+      &:hover {
+        color: blue;
+      }
     }
   }
 
@@ -44,8 +49,8 @@
         display: flex;
         flex-direction: row;
         transition: 2s ease-in-out;
-        width: 5000px; 
-
+        width: 3750px; 
+        
         .item {
           display: flex;
           flex-direction: column;
@@ -58,6 +63,7 @@
             border-radius: 999px;
             width: 216px;
             height: 216px;
+            background-color: white;
           }
 
           p {
@@ -77,6 +83,11 @@
     .titleseemore {
       flex-direction: column;
       align-items: center;
+
+      .title {
+        text-align: center;
+        margin-bottom: 16px;
+      }
     }
 
     .stackarrow {
@@ -86,11 +97,12 @@
         display: none;
       }
 
-      .stack {
+      .items {
         min-width: 372px;
         max-height: 1202px;
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
+        overflow: hidden;
 
         .item {
           margin: 0;

@@ -1,5 +1,8 @@
-import { useState, useEffect } from "react";
-import { carouselProjects } from "./carousel-panel-project";
+import React, { useState, useEffect } from "react";
+import { carouselProjects } from "./carousel";
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchData, fetchDataShort, fetchDataStack } from '../../redux/actions';
+
 interface CardProps {
   title: string;
   description: string;
@@ -21,31 +24,25 @@ export function Card({title, description, image}: CardProps) {
   )
 }
 
+interface RootState {
+  data: any;
+  shortData: any;
+  stackData: any;
+}
+
 export function PanelProjects () {
-
-  const [data, setData] = useState<any>({});
-
-  const getData = () =>  {
-    fetch('/data-short.json')
-    .then((response) => response.json())
-    .then((data1) => {
-      setData(data1)
-    })
-    .catch((error) => {
-      console.error('Error fetching JSON:', error);
-    });
-  }
+  const data = useSelector((state: RootState) => state.shortData);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    getData();
-  })
-  
+    dispatch(fetchDataShort());
+  }, [dispatch]);
   carouselProjects();
   return (
     <div className="other-project">
       <div className="titleseemore">
         <div className="title">AUTRES PROJETS</div>
-        <div className="seemore">Voir plus...</div>
+        <a href="/projects"><div className="seemore">Voir plus...</div></a>
       </div>
       <div className="cardsarrow carousel">
         <img className="arrow leftarrow" src="/icons/arrow.png" alt="The left arrow."  style={{transform: "rotate(180deg"}}/>

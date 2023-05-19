@@ -43,14 +43,17 @@ export function carouselStack() {
   });
 
   nextButton?.addEventListener('click', () => {
+    if (currentPosition == -1250) {
+      currentPosition -= 2000;
+    }
     currentPosition -= 1250;
     setPosition(currentPosition);
   });
 
-  function setPosition(currentPosition: any) {
+  function setPosition(currentPosition: number) {
     const maxPosition = 0;
     
-    if (currentPosition > maxPosition) {
+    if (currentPosition < maxPosition) {
       currentPosition = maxPosition;
     }
 

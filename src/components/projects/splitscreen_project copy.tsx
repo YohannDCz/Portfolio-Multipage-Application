@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { SplitScreen } from "../home/splitscreens-home";
-import { useSelector, useDispatch } from 'react-redux';
+import { connect } from 'react-redux';
 import { fetchData } from '../../redux/actions';
 
 interface SplitScreenProps {
@@ -10,20 +10,16 @@ interface SplitScreenProps {
   link: string;
 }
 
-interface RootState {
+interface reduxProps {
   data: any;
-  shortData: any;
-  stackData: any;
+  fetchData: any;
 }
 
-export function SplitScreens() {
-
-  const data = useSelector((state: RootState) => state.data);
-  const dispatch = useDispatch();
+export function SplitScreens({ data, fetchData }: reduxProps) {
 
   useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
+    fetchData();
+  }, [fetchData])
 
   return (
     <section id="splitscreen">
@@ -33,3 +29,17 @@ export function SplitScreens() {
     </section>
   )
 }
+
+const mapStateToProps = (state: any) => {
+  return {
+    data: state.data,
+    loading: state.loading,
+    error: state.error
+  };
+};
+
+const mapDispatchToProps = {
+  fetchData
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SplitScreens);

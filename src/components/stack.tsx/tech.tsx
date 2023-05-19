@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-
+import { useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchDataStack } from '../../redux/actions';
 interface ItemProps {
   title: string;
   description: string;
@@ -8,29 +9,19 @@ interface ItemProps {
 
 export function Tech() {
 
-  const [data, setData] = useState<any>({});
-
-  const getData = () =>  {
-    fetch('/data-stack.json')
-    .then((response) => response.json())
-    .then((data1) => {
-      setData(data1)
-    })
-    .catch((error) => {
-      console.error('Error fetching JSON:', error);
-    });
-  }
+  const stackData = useSelector((state: RootState) => state.stackData);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    getData();
-  })
+    dispatch(fetchDataStack());
+  }, [dispatch]);
   
   return (
     <div className="tech">
       <div className="stacktitle">
         <h2>STACK TECHNIQUE UTILISÉE</h2>
         <div className="stack">
-          {data?.tech?.map(({title, description, image}: ItemProps) => (
+          {stackData?.tech?.map(({title, description, image}: ItemProps) => (
           <Item key={title} title={title} description={description} image={image} />
         ))}
         </div>

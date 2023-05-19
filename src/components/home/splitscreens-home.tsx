@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchData } from '../../redux/actions';
+
 interface SplitScreenProps {
   title: string;
   description: string;
@@ -29,24 +32,12 @@ export function SplitScreen({title, description, image, link}: SplitScreenProps)
 // }
 
 export function SplitScreens() {
-
-  const [data, setData] = useState<any>({});
-
-  const getData = () =>  {
-    fetch('/data.json')
-    .then((response) => response.json())
-    .then((data1) => {
-      setData(data1)
-    })
-    .catch((error) => {
-      console.error('Error fetching JSON:', error);
-    });
-  }
+  const data = useSelector((state: RootState) => state.data);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    getData();
-  })
-  
+    dispatch(fetchData());
+  }, [dispatch]);
   return (
     <section id="splitscreen">
       {data?.description?.slice(0, 3).map(({title, description, image, link}: SplitScreenProps) => (
