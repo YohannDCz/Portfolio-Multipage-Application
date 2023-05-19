@@ -20,9 +20,12 @@ export function carouselProjects() {
 
   function setPosition(currentPosition: any) {
     const maxPosition = 0;
-    
+    const minPosition = -1233;
+
     if (currentPosition > maxPosition) {
       currentPosition = maxPosition;
+    } else if (currentPosition < minPosition) {
+      currentPosition = minPosition;
     }
     // @ts-ignore
     itemsContainer.style.transform = `translateX(${currentPosition}px)`;
@@ -43,18 +46,18 @@ export function carouselStack() {
   });
 
   nextButton?.addEventListener('click', () => {
-    if (currentPosition == -1250) {
-      currentPosition -= 2000;
-    }
     currentPosition -= 1250;
+    console.log(currentPosition)
     setPosition(currentPosition);
   });
 
   function setPosition(currentPosition: number) {
     const maxPosition = 0;
-    
-    if (currentPosition < maxPosition) {
+    const minPosition = -2500;
+    if (currentPosition > maxPosition) {
       currentPosition = maxPosition;
+    } else if (currentPosition < minPosition) {
+      currentPosition = minPosition;
     }
     // @ts-ignore
     itemsContainer.style.transform = `translateX(${currentPosition}px)`;
