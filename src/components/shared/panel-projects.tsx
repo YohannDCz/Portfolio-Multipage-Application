@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { carouselProjects } from "./carousel";
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchData, fetchDataShort, fetchDataStack } from '../../redux/actions';
+import { fetchDataShort } from '../../redux/actions';
 
 interface CardProps {
   title: string;

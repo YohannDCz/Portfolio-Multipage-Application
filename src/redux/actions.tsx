@@ -23,6 +23,20 @@ export const fetchDataStackSuccess = (data: any) => ({
   payload: data,
 });
 
+// Action creator pour la requête de récupération des données
+export function fetchDataRequest() {
+  return {
+    type: 'FETCH_DATA_REQUEST'
+  };
+}
+
+// Action creator pour l'erreur de récupération des données
+export function fetchDataError(error: any) {
+  return {
+    type: 'FETCH_DATA_ERROR',
+    payload: error
+  };
+}
 
 interface State {
   data: any;
