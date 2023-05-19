@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from '../../redux/actions';
 
@@ -27,9 +27,12 @@ export function SplitScreen({title, description, image, link}: SplitScreenProps)
     )
   }
 
-// interface MyState {
-//   [key: string]: Array<any>;
-// }
+
+  interface RootState {
+  data: any;
+  shortData: any;
+  stackData: any;
+}
 
 export function SplitScreens() {
   const data = useSelector((state: RootState) => state.data);

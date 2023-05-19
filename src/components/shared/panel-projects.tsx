@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { carouselProjects } from "./carousel";
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData, fetchDataShort, fetchDataStack } from '../../redux/actions';

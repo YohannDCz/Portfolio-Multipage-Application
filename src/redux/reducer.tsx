@@ -1,6 +1,4 @@
 import { FETCH_DATA_SHORT_SUCCESS, FETCH_DATA_STACK_SUCCESS, FETCH_DATA_SUCCESS } from "./actions";// Interface for the store state
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
 
 interface State {
   data: any;

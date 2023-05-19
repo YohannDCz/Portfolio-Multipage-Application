@@ -6,8 +6,6 @@ import About from './about'
 import { PanelProjects } from '../shared/panel-projects'
 import { PanelStack } from '../shared/panel-stack';
 import { Footer } from '../shared/footer'
-import { connect } from 'react-redux';
-import { fetchData } from '../../redux/fetcher';
 
 function Home() {
 

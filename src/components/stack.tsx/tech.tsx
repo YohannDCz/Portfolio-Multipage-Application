@@ -7,6 +7,12 @@ interface ItemProps {
   image: string;
 }
 
+interface RootState {
+  data: any;
+  shortData: any;
+  stackData: any;
+}
+
 export function Tech() {
 
   const stackData = useSelector((state: RootState) => state.stackData);
