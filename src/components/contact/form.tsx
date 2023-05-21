@@ -8,7 +8,7 @@ interface mailProps {
 }
 
 function sendEmail({email, message}: mailProps) {
-  sgMail.setApiKey( "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" )
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
     to: 'yohanndcz@gmail.com', // Change to your recipient
     from: email, // Change to your verified sender

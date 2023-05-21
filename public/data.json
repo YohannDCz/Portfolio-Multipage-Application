@@ -25,7 +25,7 @@
       "title": "PROJET MYTEAM",
       "description": "C’est mon deuxième projet écrit en Flutter. Je l’ai développé en 2 jour + 1 nuit et je l’ai publié sur le Google Play Store. À l’heure qu’il est Google est en train de l’analyser pour publication. Cette app, statique, mobile et sans state management a été facile à implémenter. Je commence toujours comme ça, exception faite pour React, ou j’ai directement commencé par le Kanban. Sachez donc que les  nouveau langage et framework ne me font pas peur !",
       "image": "/screenshots/thumbnail_myteam.png",
-      "link": ""
+      "link": "https://play.google.com/store/apps/details?id=com.myteam_multiplepage_website&hl=fr"
     },
     {
       "title": "PROJET DESIGNO",
