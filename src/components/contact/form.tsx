@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import sgMail from '@sendgrid/mail';
 import { SENDGRID_API_KEY } from './sendgridConfig';
 
-function sendEmail({email, message}) {
+interface mailProps {
+  email: string,
+  message: string
+}
+
+function sendEmail({email, message}: mailProps) {
   sgMail.setApiKey( SENDGRID_API_KEY )
   const msg = {
     to: 'yohanndcz@gmail.com', // Change to your recipient
