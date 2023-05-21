@@ -1,9 +1,0 @@
-
-{
-  "rewrites": [
-    { "source": "/", "destination": "/" },
-    { "source": "/projects", "destination": "/projects" },
-    { "source": "/stack", "destination": "/stack" },
-    { "source": "/contact", "destination": "/contact" }
-  ]
-}

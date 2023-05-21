@@ -1,0 +1,9 @@
+
+{
+  "rewrites": [
+    { "source": "/", "destination": "https://projet-entreprise.vercel.app/" },
+    { "source": "/projects", "destination": "https://projet-entreprise.vercel.app/projects" },
+    { "source": "/stack", "destination": "https://projet-entreprise.vercel.app/stack" },
+    { "source": "/contact", "destination": "https://projet-entreprise.vercel.app/contact" }
+  ]
+}
