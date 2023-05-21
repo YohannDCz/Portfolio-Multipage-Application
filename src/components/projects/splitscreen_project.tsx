@@ -8,6 +8,7 @@ interface SplitScreenProps {
   description: string;
   image: string;
   link: string;
+  qrcode: string;
 }
 
 interface RootState {
@@ -28,8 +29,8 @@ export function SplitScreens() {
 
   return (
     <section id="splitscreen">
-      {data?.description?.map(({title, description, image, link}: SplitScreenProps) => (
-        <SplitScreen key={title} title={title} description={description} image={image} link={link} />
+      {data?.description?.map(({title, description, image, link, qrcode}: SplitScreenProps) => (
+        <SplitScreen key={title} title={title} description={description} image={image} link={link} qrcode={qrcode} />
       ))}
     </section>
   )

@@ -1,4 +1,3 @@
-
 @use "header.scss";
 @use "hero.scss";
 @use "tagline.scss";
@@ -21,7 +20,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
   margin: 0;
   background-color: #FFFBF5;
 }
