@@ -14,7 +14,7 @@ function App() {
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/stack" element={<Stack />} />
           <Route path="/contact" element={<Contact />} />
