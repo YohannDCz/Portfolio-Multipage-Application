@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import sgMail from '@sendgrid/mail';
-import { SENDGRID_API_KEY } from './sendgridConfig';
+// import { SENDGRID_API_KEY } from './sendgridConfig';
 
 interface mailProps {
   email: string,
