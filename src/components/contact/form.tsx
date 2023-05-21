@@ -8,13 +8,13 @@ interface mailProps {
 }
 
 function sendEmail({email, message}: mailProps) {
-  sgMail.setApiKey( SENDGRID_API_KEY )
+  sgMail.setApiKey( "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" )
   const msg = {
     to: 'yohanndcz@gmail.com', // Change to your recipient
     from: email, // Change to your verified sender
-    subject: 'Sending with SendGrid is Fun',
+    subject: 'Nouveau message de ton portfolio',
     text: message,
-    html: '<strong>message</strong>',
+    html: `<strong>${message}</strong>`,
   };
 
   sgMail
