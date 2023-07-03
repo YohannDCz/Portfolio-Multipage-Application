@@ -11,7 +11,7 @@
    "title": "PROJET KANBAN",
    "description": "C’est un deuxième gros projet. Ce projet compte un management de tâche et dispose d’une allure élégante. Mes principales préoccupation on été de pourvoir retracer la tâche sélectionnée dans le contexte du JSON donné et de remplir les informations analogues à la tâche en conséquence. La partie en Redux arrive pour prendre la place des manipulation avec le localstorage.",
    "image": "/screenshots/thumbnail_kanban.png",
-   "link": "https://projet-entreprise.vercel.app/",
+   "link": "https://kanban-8k2cs73m9-yohanndcz.vercel.app/",
    "qrcode": "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=kanban-woad.vercel.app/"
   },
   {
