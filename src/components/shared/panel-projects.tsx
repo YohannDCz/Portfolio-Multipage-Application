@@ -12,13 +12,11 @@ interface CardProps {
 
 export function Card({ title, description, image, link }: CardProps) {
 	return (
-		<a href={link}>
-			<div className="card item">
-				<img src={image} alt="" className="thumbnail" />
-				<div className="text">
-					<div className="title">{title}</div>
-					<div className="description">{description}</div>
-				</div>
+		<a className="card item" href={link} target="_blank">
+			<img src={image} alt="" className="thumbnail" />
+			<div className="text">
+				<div className="title">{title}</div>
+				<div className="description">{description}</div>
 			</div>
 		</a>
 	);
