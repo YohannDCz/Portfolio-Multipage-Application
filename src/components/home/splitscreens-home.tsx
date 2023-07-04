@@ -21,7 +21,7 @@ export function SplitScreen({title, description, image, link, qrcode}: SplitScre
         <div className="text">
           <h1>{title}</h1>
           <p>{description}</p>
-          <a href={link}><button className="seemore">SEE MORE</button></a>
+          <a href={link} target="_blank"><button className="seemore">SEE MORE</button></a>
         </div>
       </div>
     </div>
