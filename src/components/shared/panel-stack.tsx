@@ -8,10 +8,10 @@ interface TechProps {
 }
 
 function Tech({image, title}: TechProps) {
-  return <a className="item" href="/stack">
+  return <div className="item">
     <img src={image} alt="" className="image" />
     <p>{title}</p>
-  </a>;
+  </div>;
 }
 
 interface RootState {
